@@ -3,7 +3,7 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 0 10%;
-    background-image: url("https://w.wallhaven.cc/full/ly/wallhaven-lymxxl.png");
+    background-image: url("https://w.wallhaven.cc/full/je/wallhaven-je5pxy.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -636,12 +636,11 @@ input[type="color"]::-webkit-color-swatch {
     }
 }
 
-#curso {
-   border: 2px solid white;
-   background-color: white;
-}
-
-#profesor{
+#curso,
+#profesor,
+#horaInicio,
+#horaFin,
+#dia {
     border: 2px solid white;
     background-color: white;
 }
