@@ -267,6 +267,7 @@ input[type="color"]::-webkit-color-swatch {
         display: flex;
         flex-direction: row;
         justify-content: center;
+
     }
 
     .grupo-curso-color input[type="text"] {
@@ -633,4 +634,14 @@ input[type="color"]::-webkit-color-swatch {
         padding: 12px 0;
         margin-top: 0;
     }
+}
+
+#curso {
+   border: 2px solid white;
+   background-color: white;
+}
+
+#profesor{
+    border: 2px solid white;
+    background-color: white;
 }
