@@ -314,6 +314,7 @@ input[type="color"]::-webkit-color-swatch {
         margin-top: 15px;
         display: flex;
         align-items: center;
+        margin-bottom: 40px;
     }
 
     .acciones button {
@@ -407,6 +408,7 @@ input[type="color"]::-webkit-color-swatch {
         margin-top: 15px;
         display: flex;
         align-items: center;
+        margin-bottom: 40px;
     }
 
     .acciones button {
@@ -427,6 +429,7 @@ input[type="color"]::-webkit-color-swatch {
         max-width: 350px;
         margin: 0 auto;
         box-sizing: border-box;
+        margin-bottom: 40px;
     }
 
     .formulario {
