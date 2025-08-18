@@ -219,10 +219,18 @@ input[type="color"]::-webkit-color-swatch {
 
     .formulario input,
     .formulario select,
-    .formulario textarea {
+    .formulario textarea,
+    .formulario input[type="text"],
+    .formulario input[type="date"],
+    .formulario input[type="time"],
+    .formulario input[type="number"],
+    .formulario input[type="email"],
+    .formulario input[type="password"] {
         background: #fff !important;
         color: #222 !important;
         border: 1.5px solid #bbb !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
     }
 
     .formulario,
