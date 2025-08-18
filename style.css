@@ -213,7 +213,19 @@ input[type="color"]::-webkit-color-swatch {
 
 /* RESPONSIVE: Pantallas menores a 600px (móviles) */
 @media (max-width: 600px) {
+    .deslizable {
+        display: none !important;
+    }
 
+    .formulario input,
+    .formulario select,
+    .formulario textarea {
+        background: #fff;
+        /* Fondo blanco fijo */
+        color: #222;
+        /* Texto oscuro */
+        border: 1.5px solid #bbb;
+    }
 
     .formulario,
     .grupo-curso-color,
