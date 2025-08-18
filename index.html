@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Horario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>HORARIO</h1>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="horario" id="horario"></div>
+            <div class="acciones">
+                <button onclick="limpiarHorario()">Limpiar</button>
+                <button onclick="descargarHorario()">Descargar</button>
+            </div>
+        </div>
+        <div class="formulario">
+            <input type="text" id="curso" placeholder="Curso">
+            <select id="dia">
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miercoles</option>
+                <option value="4">Jueves</option>
+                <option value="5">Viernes</option>
+                <option value="6">Sabado</option>
+            </select>
+            <input type="time" id="horaInicio" value="07:00">
+            <input type="time" id="horaFin" value="08:00">
+            <input type="text" id="profesor" placeholder="Profesor">
+            <input type="color" id="color" value="#ff0000">
+            <button onclick="agregarcurso()">Agregar</button>
+        </div>
+        <div class="deslizable" id="scrollDownBtn">
+            <img src="images/deslizable.png" alt="Deslizar hacia abajo">
+        </div>
+        <div class="deslizable" id="scrollUpBtn">
+            <img src="images/deslizablearriba.png" alt="Deslizar hacia arriba">
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

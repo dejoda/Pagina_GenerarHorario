@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    background-image: url("https://w.wallhaven.cc/full/ly/wallhaven-ly3qel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.header {
+    margin-bottom: 0PX;
+    margin-top: 0PX;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.main{
+    margin-top: 60px;
+}
+
+/* Para Chrome, Safari y Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.formulario input,
+.formulario select,
+.formulario button {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.horario {
+    display: grid;
+    grid-template-columns: 60px repeat(6, 1fr);
+    border: 2px solid #000;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    gap: 0;
+    /* sin espacio entre celdas */
+    position: relative;
+    /* para anclar .curso */
+    grid-auto-rows: 20px;
+    border-radius: 20px;
+    /* << cada bloque de 15 min mide 20px EXACTOS */
+}
+
+.horario div {
+    padding: 0;
+    text-align: center;
+    /* min-height: 20px;  << QUITA esto, ya controlamos la altura con grid-auto-rows */
+    position: relative;
+    font-size: 15px;
+    border: none;
+}
+
+
+
+.hora {
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    line-height: 20px;
+    /* el texto no estira la fila */
+}
+
+.curso {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 0;
+    /* el JS ajusta top/height */
+    background-color: #ff5733;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 0;
+    z-index: 10;
+    /* por encima de las líneas */
+    overflow: hidden;
+}
+/* Botón eliminar individual */
+.curso button.eliminar {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: rgba(255, 0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 2px 5px;
+
+
+}
+/* Botón global limpiar */
+.acciones {
+    text-align: center;
+    margin: 15px 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.acciones button {
+    background: #ff0800;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.2s;
+    margin-top: 25px;
+
+}
+
+.acciones button:hover {
+    background: #8f1d04;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+}
+
+.horario .hora.oculta {
+    visibility: hidden;
+    /* ya no forces height:0; la fila vale 20px igual */
+    padding: 0;
+    border: none;
+}
+
+.horario .celda {
+    border: 0.4px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    /* referencia para .curso */
+    z-index: 0;
+}
+
+input[type="color"] {
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 90px;
+    padding: 0;
+    border: 5px solid #00000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 90px;
+}
+
+.deslizable {
+    position: fixed;
+    right: 20px;
+    /* Alineado a la derecha */
+    width: 50px;
+    /* Tamaño del botón */
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Para que estén visibles sobre todo */
+}
+
+#scrollDownBtn {
+    bottom: 20px;
+    /* El botón para bajar está abajo */
+}
+
+#scrollUpBtn {
+    bottom: 80px;
+    /* El botón para subir está encima (ajusta la distancia) */
+}
+
+.deslizable img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*--------------------*/
