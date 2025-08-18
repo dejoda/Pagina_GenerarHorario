@@ -220,11 +220,9 @@ input[type="color"]::-webkit-color-swatch {
     .formulario input,
     .formulario select,
     .formulario textarea {
-        background: #fff;
-        /* Fondo blanco fijo */
-        color: #222;
-        /* Texto oscuro */
-        border: 1.5px solid #bbb;
+        background: #fff !important;
+        color: #222 !important;
+        border: 1.5px solid #bbb !important;
     }
 
     .formulario,
